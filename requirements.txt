@@ -2,3 +2,4 @@ flask
 transformers
 torch
 requests
+pywin32==303; platform_system=="Windows"
