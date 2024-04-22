@@ -54,7 +54,7 @@ jobs:
 
     steps:
       - name: Download artifact from build job
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: python-app
 
@@ -63,7 +63,7 @@ jobs:
 
       
       - name: Login to Azure
-        uses: azure/login@v1
+        uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_EBFEC4A75E7641228E3DF9B2A82DC21B }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C102E4C09A714C96995BCB0FA86CBBE7 }}
